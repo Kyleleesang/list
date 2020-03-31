@@ -12,13 +12,13 @@ public class Main {
         ProductList productList = myXmlReader.getProducts();
 
         // Show the size of the list
-        //System.out.println("Size: " + productList.size()); // Uncomment when ready to test
+        System.out.println("Size: " + productList.size()); // Uncomment when ready to test
 
         // Show the sum of all the unit prices
-        //System.out.println("Sum: " + productList.sum()); // Uncomment when ready to test
+        System.out.println("Sum: " + productList.sum()); // Uncomment when ready to test
 
         // String representation of the list
-        //System.out.println("---=== Product List ===---");
-        //System.out.println(productList.toString()); // Uncomment when ready to test
+        System.out.println("---=== Product List ===---");
+        System.out.println(productList.toString()); // Uncomment when ready to test
     }
 }

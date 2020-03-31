@@ -31,8 +31,6 @@ public class XmlHandler extends DefaultHandler {
 
     // Return a reference to the product list
     public ProductList getProducts() {
-        return productList;
+        return ProductList;
     }
 }
-
-

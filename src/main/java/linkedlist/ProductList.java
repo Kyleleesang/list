@@ -2,8 +2,11 @@ package linkedlist;
 
 public class ProductList {
     // Instance variables
-
+    Product head;
     // Constructor -- create an empty list
+    public ProductList() {
+      
+    }
 
     // add method -- create first node, or delegate to first node
     // Check if list is empty
