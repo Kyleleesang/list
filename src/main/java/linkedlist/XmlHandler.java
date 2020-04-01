@@ -14,7 +14,17 @@ public class XmlHandler extends DefaultHandler {
     public void startElement(String uri, String localName, String qName,
                              Attributes attributes) throws SAXException {
         //System.out.println("Start element");
-
+        Boolean tax = attributes.getValue("taxable");
+        String name = attributes.getValue("name");
+        String isbn = attributes.getValue("isbn");
+        String price = attributes.getValue("unitPrice");
+        if(taxable == true){
+            currentProduct = new TaxableProduct(name,isbn,price);
+        }
+        else{
+            currentProduct = new NonTaxableProduct(name,isbn,price);
+        }
+        ProductList.add(currentProduct);
         // Check if this is an opening element for a product
         // If so, store each of its attribute values
         // Determine type of product (taxable vs. nontaxable)
